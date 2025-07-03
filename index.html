@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> 
+  <meta charset="UTF-8"> <!-- Define o conjunto de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+  <title>Thais Moura - Página Pessoal</title> <!-- Título da aba do navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo de estilos -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Didact+Gothic&family=Righteous&family=Sarala:wght@400;700&display=swap" rel="stylesheet"> <!-- Fontes do Google Fonts -->
+</head>
+<body>
+
+  <!-- Cabeçalho com imagem e menu de navegação -->
+  <header class="cabecalho">
+    <img class="cabecalho-imagem" src="foto2.png" alt="Logo pessoal">
+    <nav class="cabecalho-menu">
+      <!-- Links para seções da página -->
+      <a class="cabecalho-menu-item" href="#sobre">Sobre Mim</a>
+      <a class="cabecalho-menu-item" href="#formacao">Formação</a>
+      <a class="cabecalho-menu-item" href="#portfolio">Portfólio</a>
+      <a class="cabecalho-menu-item" href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <!-- Seção principal com título, subtítulo e botão de contato -->
+    <section class="conteudo-principal">
+      <div class="conteudo-principal-escrito">
+        <h1 class="conteudo-principal-escrito-titulo">Thais Moura</h1>
+        <h2 class="conteudo-principal-escrito-subtitulo">Desenvolvedora em formação | 27 anos</h2>
+        <!-- Botão que rola até a seção de contato -->
+        <button class="conteudo-principal-escrito-botao" onclick="document.getElementById('contato').scrollIntoView()">Fale comigo</button>
+      </div>
+      <img class="conteudo-principal-imagem" src="foto.jpeg" alt="Imagem principal">
+    </section>
+
+    <!-- Linha divisória visual -->
+    <hr class="linha-separadora">
+
+    <!-- Seções 'Sobre' e 'Formação' lado a lado -->
+    <div class="secao-dupla">
+      <section class="conteudo-secundario" id="sobre">
+        <h3 class="conteudo-secundario-titulo">Sobre Mim</h3>
+        <p class="conteudo-secundario-paragrafo">
+          Olá! Meu nome é Thais, sou estudante de Análise e Desenvolvimento de Sistemas pela Uninter e estou em transição de carreira. 
+          Sou formada em Tecnologia em Processos Gerenciais e hoje me encontrei na área da tecnologia. Amo gatos e astronomia. 
+          Gosto de resolver problemas e estou sempre em busca de aprender mais.
+        </p>
+      </section>
+
+      <section class="conteudo-secundario" id="formacao">
+        <h3 class="conteudo-secundario-titulo">Formação e Idiomas</h3>
+        <p class="conteudo-secundario-paragrafo">
+          Análise e Desenvolvimento de Sistemas. <br> Fev 2024 - Atualmente
+        </p>
+        <p class="conteudo-secundario-paragrafo">
+          Idiomas: Português (nativo), Inglês (intermediário).
+        </p>
+      </section>
+    </div>
+
+    <!-- Linha divisória visual -->
+    <hr class="linha-separadora">
+
+    <!-- Seção com link para o portfólio -->
+    <section class="conteudo-secundario" id="portfolio">
+      <h3 class="conteudo-secundario-titulo">Portfólio</h3>
+      <p class="conteudo-secundario-paragrafo">
+        <a href="https://github.com/ithaism" target="_blank">Clique Aqui</a> para acessar meu GitHub.
+      </p>
+    </section>
+
+    <!-- Linha divisória visual -->
+    <hr class="linha-separadora">
+
+    <!-- Seção de formulário de contato -->
+    <section class="conteudo-secundario" id="contato">
+      <h3 class="conteudo-secundario-titulo">Contato</h3>
+      <form>
+        <input type="text" name="nome" placeholder="Seu nome"> <!-- Campo nome -->
+        <input type="email" name="email" placeholder="seu@email.com"> <!-- Campo email -->
+        <textarea name="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea> <!-- Campo mensagem -->
+        <button type="submit" class="conteudo-principal-escrito-botao">Enviar</button> <!-- Botão de envio -->
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé com imagem -->
+  <footer class="rodape">
+    <img class="rodape-imagem" src="foto2.png" alt="Logo rodapé">
+  </footer>
+
+</body>
+</html>

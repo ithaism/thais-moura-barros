@@ -1,0 +1,192 @@
+/* Importa fontes personalizadas do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Didact+Gothic&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+/* Reset básico e padrão global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Define fundo gradiente e tamanho base da fonte */
+body {
+  background: linear-gradient(68.15deg, #0c020f 16.62%, #6d398a 85.61%);
+}
+
+/* Estilo do cabeçalho */
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+/* Logo do cabeçalho com imagem circular */
+.cabecalho-imagem {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover; /* Garante que a imagem se ajuste e centralize no espaço */
+}
+
+/* Menu de navegação */
+.cabecalho-menu {
+  display: flex;
+  gap: 32px;
+}
+
+/* Itens do menu do cabeçalho */
+.cabecalho-menu-item {
+  font-family: "Didact Gothic", sans-serif;
+  color: #FFF2E7;
+  font-size: 18px;
+}
+
+/* Seção principal da página */
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid #FFF2E7;
+}
+
+/* Bloco principal com imagem e texto lado a lado */
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px;
+}
+
+/* Conteúdo textual do bloco principal */
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Título principal */
+.conteudo-principal-escrito-titulo {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 64px;
+  color: #FFF2E7;
+}
+
+/* Subtítulo abaixo do nome */
+.conteudo-principal-escrito-subtitulo {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 24px;
+  color: #ECD6C4;
+}
+
+/* Botão de chamada para ação */
+.conteudo-principal-escrito-botao {
+  background-color: #ECD6C4;
+  width: 180px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 24px;
+  color: #2F2325;
+  cursor: pointer;
+}
+
+/* Efeito hover no botão */
+.conteudo-principal-escrito-botao:hover {
+  background-color: rgba(236, 214, 196, 0.53);
+}
+
+/* Linha divisória entre seções */
+.linha-separadora {
+  margin: 48px 0;
+  border-top: 0.4px solid #FFF2E7;
+  width: 100%;
+}
+
+/* Imagem principal arredondada */
+.conteudo-principal-imagem {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover; /* Garante corte proporcional da imagem */
+}
+
+/* Seções secundárias como 'Sobre', 'Formação', etc. */
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: 48px 16px 0 16px;
+}
+
+/* Título das seções secundárias */
+.conteudo-secundario-titulo {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 24px;
+  color: #FFF2EF;
+  margin-bottom: 8px;
+}
+
+/* Parágrafos das seções secundárias */
+.conteudo-secundario-paragrafo {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 18px;
+  color: #ECD6C4;
+  text-align: center;
+}
+
+/* Estilo geral do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 80%;
+  max-width: 400px;
+}
+
+/* Estilo dos campos de entrada e textarea */
+input, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+/* Impede redimensionamento do campo de texto */
+textarea {
+  resize: none;
+}
+
+/* Rodapé com borda superior */
+.rodape {
+  padding: 32px;
+  border-top: 0.4px solid #FFF2E7;
+  text-align: center;
+}
+
+/* Imagem do rodapé redonda */
+.rodape-imagem {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Container para deixar 'Sobre' e 'Formação' lado a lado */
+.secao-dupla {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  margin-top: 48px;
+  flex-wrap: wrap; /* Permite que quebre em telas menores */
+}
+
+/* Responsividade e limitação da largura de cada seção */
+.secao-dupla .conteudo-secundario {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
